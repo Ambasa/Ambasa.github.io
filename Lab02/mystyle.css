@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(163, 103, 24);
+  }
+.headColor{
+    font-style: italic;
+}
+
+.column {
+    float: left;
+    width: 20%;  
+}
+
+p.thick {
+    font-weight: bold;
+}
+h2, h3 { 
+    color: #030f03;
+    text-decoration: underline;
+}
+.movieInfoHead{
+    color: #4e060c;
+    font-style: italic;
+    font-size: 16px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+:link {
+    text-decoration: none;
+  }
+  
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+a:active {
+    text-decoration: underline;
+}
