@@ -1,5 +1,6 @@
+
 body {
-    background-color: rgb(163, 103, 24);
+    background-color: rgb(124, 120, 114);
   }
 .headColor{
     font-style: italic;
@@ -7,8 +8,9 @@ body {
 
 .column {
     float: left;
-    width: 20%;  
+    width: 33%;  
 }
+
 
 p.thick {
     font-weight: bold;
