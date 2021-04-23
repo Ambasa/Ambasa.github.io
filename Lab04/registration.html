@@ -21,42 +21,44 @@
             <div class="title-space">Workshop Registration</div>
             <div class="grid-container">
                 <div class="grid_left"><br/>
-                    <tr><td><span>Register now while seats are available!</span><br></td></tr>
+                    <tr><td><span class="note">Register now while seats are available!</span><br></td></tr>
                     <p></p>
                     <form method="get" name="myForm">
                         <table cellpadding = "10">
                         <tr>
                             <td><label for="firstName">First name: </label></td> 
-                            <td><input type="text" id="firstName" name="firstName" placeholder="First Name"><br><br></td>
+                            <td><input type="text" id="firstName" name="firstName" placeholder="First Name" required
+                                pattern="^([A-Za-z]+[ ]?|[A-Za-z]+)+$" title="Only letters allowed"><br><br></td>
                         </tr>
                         
                         <tr>
                             <td><label for="lastName">Last name: </label></td> 
-                            <td><input type="text" id="lastName" name="lastName" placeholder="Last Name"><br><br></td>
+                            <td><input type="text" id="lastName" name="lastName" placeholder="Last Name" required
+                                pattern="^([A-Za-z]+[ ]?|[A-Za-z]+)+$" title="Only letters allowed"><br><br></td>
                         </tr>
 
                         <tr>
                             <td><label for="companyName">Company/Institute: </label></td> 
-                            <td><input type="text" id="companyName" name="companyName" placeholder="Company Name"><br><br></td>
+                            <td><input type="text" id="companyName" name="companyName" placeholder="Company Name" required><br><br></td>
                         </tr>
 
                         <tr>
                             <td><label for="address">Address: </label></td> 
                             <td>
-                                
-                                <textarea name="comments" id="address" name="address" placeholder="Adress">     </textarea> <br />
+                                <textarea name="comments" id="address" name="address" placeholder="Address" required></textarea><br/>
                             </td>
                         </tr>
 
                         <tr>
                             <td><label for="city">City: </label></td> 
-                            <td><input type="text" id="city" name="city" placeholder="city"><br><br></td>
+                            <td><input type="text" id="city" name="city" placeholder="City"><br><br></td>
                         </tr>
 
                         <tr>
                             <td><label for="state">State/Province/Region: </label></td> 
                             <td>
-                                <select name="state" id="state" class="selectInsideTable">
+                                <select name="state" id="state" class="selectInsideTable" >
+                                    <option value="--select--">--select--</option>
                                     <option value="California">California</option>
                                     <option value="Texas">Texas</option>
                                     <option value="Florida">Florida</option>
@@ -70,7 +72,8 @@
                         <tr>
                             <td><label for="country">Country: </label></td> 
                             <td>
-                                <select name="country" id="country" class="selectInsideTable">
+                                <select name="country" id="country" class="selectInsideTable" >
+                                    <option value="--select--">--select--</option>
                                     <option value="USA">USA</option>
                                     <option value="Canada">Canada</option>
                                 </select>
@@ -79,12 +82,19 @@
 
                         <tr>
                             <td><label for="email">Email: </label></td> 
-                            <td><input type="email" id="email" name="email" placeholder="Email"><br><br></td>
+                            <td><input type="email" id="email" name="email" placeholder="Email" required><br><br></td>
                         </tr>
 
                         <tr>
                             <td><label for="phoneNumber">Phone Number: </label></td> 
-                            <td><input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"><br><br></td>
+                            <td><input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required><br><br></td>
+                        </tr>
+
+                        <tr class="resetSubmit">
+                            <td>
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </td>
                         </tr>
                     </table>
                     </form> 
@@ -119,13 +129,13 @@
                                 <label for="cheque">Cheque</label><br>
                                 
                                 <input type="radio" id="draft" name="pay" value="draft">
-                                <label for="draft">Demand Draft</label> 
+                                <label for="draft">Demand Draft</label><br>
                             </td>
                         </tr>
 
                         <tr>
                             <td><label for="checkNumber">DD/Cheque No.: </label></td> 
-                            <td><input type="text" id="checkNumber" name="checkNumber" placeholder="DD/Cheque No."><br><br></td>
+                            <td><input type="text" id="checkNumber" name="checkNumber" placeholder="DD/Cheque No." required><br><br></td>
                         </tr>
                         
                         <tr>
@@ -136,12 +146,6 @@
                         <tr>
                             <td><label for="payableAt">Payable At: </label></td> 
                             <td><input type="text" id="payableAt" name="payableAt" placeholder="Payable At"><br><br></td>
-                        </tr>
-                        <tr class="resetSubmit">
-                            <td>
-                                <input type="submit" value="Submit">
-                                <input type="reset" value="Reset">
-                            </td>
                         </tr>
                         </table>
                     </form>
