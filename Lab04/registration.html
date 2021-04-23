@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Learn HTML" />
+        <meta name="keywords" content="HTML,CSS" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>WAP Lab Solutions</title>
+        <link rel="icon" href="../Resources/images/maharishi-tree.png">
+        <link href="./style.css" type="text/css" media="screen" rel="stylesheet"/>
+        <style>
+            textarea {
+                width: 300px;
+                height: 150px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main-container">
+            <div class="title-space">Workshop Registration</div>
+            <div class="grid-container">
+                <div class="grid_left"><br/>
+                    <tr><td><span>Register now while seats are available!</span><br></td></tr>
+                    <p></p>
+                    <form method="get" name="myForm">
+                        <table cellpadding = "10">
+                        <tr>
+                            <td><label for="firstName">First name: </label></td> 
+                            <td><input type="text" id="firstName" name="firstName" placeholder="First Name"><br><br></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><label for="lastName">Last name: </label></td> 
+                            <td><input type="text" id="lastName" name="lastName" placeholder="Last Name"><br><br></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="companyName">Company/Institute: </label></td> 
+                            <td><input type="text" id="companyName" name="companyName" placeholder="Company Name"><br><br></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="address">Address: </label></td> 
+                            <td>
+                                
+                                <textarea name="comments" id="address" name="address" placeholder="Adress">     </textarea> <br />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="city">City: </label></td> 
+                            <td><input type="text" id="city" name="city" placeholder="city"><br><br></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="state">State/Province/Region: </label></td> 
+                            <td>
+                                <select name="state" id="state" class="selectInsideTable">
+                                    <option value="California">California</option>
+                                    <option value="Texas">Texas</option>
+                                    <option value="Florida">Florida</option>
+                                    <option value="Alaska">Alaska</option>
+                                    <option value="Iowa">Iowa</option>
+                                    <option value="Virginia">Virginia</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="country">Country: </label></td> 
+                            <td>
+                                <select name="country" id="country" class="selectInsideTable">
+                                    <option value="USA">USA</option>
+                                    <option value="Canada">Canada</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="email">Email: </label></td> 
+                            <td><input type="email" id="email" name="email" placeholder="Email"><br><br></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="phoneNumber">Phone Number: </label></td> 
+                            <td><input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"><br><br></td>
+                        </tr>
+                    </table>
+                    </form> 
+                </div>
+            
+                <div class="grid_right">
+                    <p></p>
+                    <form method="get" name="myForm">
+                        <table cellpadding = "10">
+                        <tr>
+                            <tr><td><span>Lunch</span><br></td></tr>
+                            <td><label for="meal">Meal Preference: </label></td>
+                            <td>
+                                <select name="meal" id="meal" class="selectInsideTable">
+                                    <option value="Vegetarian">Vegetarian</option>
+                                    <option value="Vegan">Vegan</option>
+                                    <option value="Pescatarian">Pescatarian</option>
+                                    <option value="Beegan">Beegan</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr><td><span>Payment Details</span><br></td></tr>
+
+                        <tr>
+                            <td><label for="payment">Payment Mode: </label></td>
+                            <td>
+                                <input type="radio" id="cash" name="pay" value="cash">
+                                <label for="cash">Cash</label><br>
+                                
+                                <input type="radio" id="cheque" name="pay" value="cheque">
+                                <label for="cheque">Cheque</label><br>
+                                
+                                <input type="radio" id="draft" name="pay" value="draft">
+                                <label for="draft">Demand Draft</label> 
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="checkNumber">DD/Cheque No.: </label></td> 
+                            <td><input type="text" id="checkNumber" name="checkNumber" placeholder="DD/Cheque No."><br><br></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><label for="bankName">Drawn On(Bank Name): </label></td> 
+                            <td><input type="text" id="banckName" name="banckName" placeholder="Drawn On(Bank Name)"><br><br></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="payableAt">Payable At: </label></td> 
+                            <td><input type="text" id="payableAt" name="payableAt" placeholder="Payable At"><br><br></td>
+                        </tr>
+                        <tr class="resetSubmit">
+                            <td>
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </td>
+                        </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>  
+        </div>
+        <footer class="foot">
+            Workshop Registration
+        </footer> 
+    </body>
+</html>
